@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Encriptador de JR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Titulo" id="Titulo">
+      <h1>Encriptador Oficial</h1>
+    </div>
+    <div class="Contenedor">
+      <div class="Encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aqui"
+        ></textarea>
+        <div class="Condiciones">
+          <p>
+            Recuerda usar solo letras minusculas y sin acentos para un mejor
+            resultado.
+          </p>
+        </div>
+        <div class="Encriptado">
+          <img src="img/Aencriptar.png" alt="" id="ImagenCuadro" />
+          <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h1 id="TituloMensaje">Mensaje no ha sido descifrado</h1>
+            <p id="Instruccion">
+              Ingrese el mensaje que deseas encriptar o desencriptar.
+            </p>
+            <!--<textarea
+            name="Mensaje"
+            id="Mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje">
+          </textarea>-->
+          </div>
+        </div>
+      </div>
+      <div class="Botones">
+        <button class="BotonEncriptar" type="button" onclick="encriptar()">
+          Encriptar
+        </button>
+        <button
+          class="BotonDesencriptar"
+          type="button"
+          onclick="desencriptar()"
+        >
+          Desencriptar
+        </button>
+        <button
+          id="BotonCopiar"
+          class="BotonCopiar"
+          type="button"
+          onclick="copiar()"
+        >
+          Copiar
+        </button>
+      </div>
+    </div>
+    <footer class="PieDePagina">
+      <div class="box">
+        <h1>Informacion</h1>
+        <p>Diseñado por Julian A Rodriguez Velez</p>
+        <p>Correo electrónico: julirv154@gmail.com</p>
+        <p>Teléfono: (300) 400-1605</p>
+        <p>Medellin, Antioquia</p>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
